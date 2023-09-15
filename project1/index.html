@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Contact Form - André Cardoso</title>
+    </title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/form_style.css">
+
+    <script src="js/form_script.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+        <h1>You talking to me?</h1>
+        <!-- <p><i class="fa-solid fa-bullhorn"></i></p> -->
+        <h2 class="sucess-message"></h2>
+
+        <form id="contact" action="php/form.php" method="post" novalidate>
+            <article class="form_group">
+                <label for="name">First name</label>
+                <input type="text" name="first-name" id="name">
+            </article>
+
+            <article class="form_group">
+                <label for="name">Last name</label>
+                <input type="text" name="last-name">
+            </article>
+
+            <article class="form_group">
+              <label for="mail">Email</label>
+              <input type="text" name="mail">
+            </article>
+
+            <article class="form_group">
+              <label for="message">Message</label>
+              <textarea name="msg"></textarea>
+            </article>
+
+            <article class="form_group">
+                <input type="submit" value="&#xf0a1" class="btn">
+            </article>
+        </form>
+      </section>
+    </body>
+</html>
